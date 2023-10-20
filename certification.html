@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    <link rel="stylesheet" href="certification.css">
+    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <!-- htmltocanvas -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <!-- <script src="scripts/jquer_latest_3.6_.min.js" type="text/javascript"></script> -->
+    <!-- <script src="scripts/html2canvas.js" type="text/javascript"></script> -->
+    <!-- <style>
+        
+    </style> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- <script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script> -->
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    <script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+</head>
+
+<body class="bgcertificate">
+    <div class="buttons">
+        <!-- <button onclick="downloadAsPDF()">Download</button>
+            <a href="./quiz.html"> <button>Back</button> </a> -->
+        <button type="button" class="download_btn btnScreenShot" id="btnDownload">Download</button>
+        <div id="output"></div>
+        <!-- <a id="download" class="download_btn"><button type="button">Download</button></a> -->
+        <a href="./index.html" class="H_btn"> HOME</a>
+        <div class="social-menu">
+            <ul>
+                <li class="whatsaap"><a target="blank"><i class="fab fa-whatsapp"></i></a></li>
+                <li class="twitter"><a><i class="fab fa-twitter"></i></a></li>
+                <li class="email"><a><i class="fab fas fa-envelope"></i></a></li>
+                <li class="twitter"><a><i class="fab fa-facebook-square"></i></a></li>
+                <!-- <li class="twitter"><a><i class="fab fa-facebook-messenger"></i></a></li> -->
+            </ul>
+        </div>
+        <!-- <div class="shar_box">
+                <div class="btn_wrap">
+                    <span>Share</span>
+                    <div class="container">
+                        <i class="fab fa-whatsapp"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fas fa-download"></i>
+                    </div>
+                </div>
+                <a href="https://dribbble.com/YancyMin" class="dr-url" target="_blank"><img class="dr"
+                        src="https://cdn.dribbble.com/assets/logo-footer-hd-a05db77841b4b27c0bf23ec1378e97c988190dfe7d26e32e1faea7269f9e001b.png"
+                        alt=""></a>
+            </div> -->
+    </div>
+    <!-- <div class="container pm-certificate-container" id="htmlContent"> -->
+    <!-- <div class="container pm-certificate-container" id="capture"> -->
+    <div class="certificateECI">
+        <div id="capture">
+            <img src="./certificate for ECI.png" alt="" class="res">
+            <h1 class="levels resC">COMPLETED ALL THE LEVELS SUCCESSFULLY</h1>
+            <span id="userName" class="usR">Akash Meena</span>
+            <span id="ShowImage" class="usI">
+                <!-- <img src="./image (2).png" width="100%" alt=""> -->
+            </span>
+        </div>
+    </div>
+    <canvas id="my-canvas"></canvas>
+    <!-- old code -->
+    <!-- <div class="logo_govt">
+            <img src="https://cdn.discordapp.com/attachments/339446218428121098/1115925800231911434/image_2.png"
+                alt="Election Commission of India Logo">
+        </div>
+        <div class="logo_govt2">
+            <img src="https://cdn.discordapp.com/attachments/339446218428121098/1115925800231911434/image_2.png"
+                alt="Election Commission of India Logo">
+        </div>
+        <div class="pm-certificate-border col-xs-12">
+            <div class="row pm-certificate-header">
+                <div class="pm-certificate-title col-xs-12 text-center">
+                    <h2>Election Commission of India</h2>
+                    <p class="cursive">This certificate is proudly presented to</p>
+                </div>
+            </div>
+
+            <div class="row pm-certificate-body">
+
+                <div class="pm-certificate-block">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-xs-2"></div>
+                            <div class="pm-certificate-name underline margin-0 col-xs-8 text-center">
+                                <span class="pm-name-text bold"><span id="userName"></span></span>
+                            </div>
+                            <div class="col-xs-2"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-xs-2"></div>
+                            <div class="pm-earned col-xs-8 text-center">
+                                <span class="pm-earned-text padding-0 block cursive"
+                                    style="font-size: 2rem;">Congratulations</span>
+                                <span class="pm-credits-text block bold sans">for Successfully completing National
+                                    Voter Awareness Quiz Contest</span> <br>
+                                <span id="ShowImage"></span>
+                            </div>
+                            <div class="col-xs-2"></div>
+                            <div class="col-xs-12"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./certificate.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+
+    <script>
+        //var whatsaap = document.querySelector('.whatsaap');
+        //const instagram = document.querySelector('.instagram');
+        //const linkedin = document.querySelector('.linkedin');
+        //const twitter = document.querySelector('.twitter');
+        //const newData = window.localStorage.getItem("newData");
+        ////console.log(newData);
+        //const pageURL = location.href;
+        //const message = `This honorable Certificate of Completion is hereby bestowed upon ${value} for the exceptional performance that //led to the successful completion of ECI`;
+        //const imageBase64 = "data:image/png;base64, "; // Replace <base64-encoded-image-data> with the actual base64 encoded image data
+//
+        //const whatsaapAPI = ` https://wa.me/?text=${pageURL} ${message} ${imageBase64}`;
+        //const instagramAPI = `https://www.instagram.com/share?url=${pageURL}&caption=${message}&media=${imageBase64}`;
+        //const linkedinAPI = `https://www.linkedin.com/sharing/share-offsite/?url=${pageURL}&summary=${message}&source=${imageBase64}`;
+        //const twitterAPI = `https://twitter.com/intent/tweet?text=${pageURL} ${message} ${imageBase64}`;
+        //whatsaap.addEventListener('click', () => {
+        //    console.log('Whatsapp');
+        //    window.open(url = whatsaapAPI, target = "_blank");
+        //});
+//
+        //instagram.addEventListener('click', () => {
+        //    console.log('Instagram');
+        //    window.open(url = instagramAPI, target = "_blank");
+        //});
+//
+        //linkedin.addEventListener('click', () => {
+        //    console.log('LinkedIn');
+        //    window.open(url = linkedinAPI, target = "_blank");
+        //});
+
+
+
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

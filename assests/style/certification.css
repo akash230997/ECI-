@@ -1,0 +1,351 @@
+.container i:nth-of-type(1) {
+  -webkit-transition-delay: 1.1s;
+  transition-delay: 1.1s;
+}
+
+.container i:nth-of-type(2) {
+  -webkit-transition-delay: 0.9s;
+  transition-delay: 0.9s;
+}
+
+.container i:nth-of-type(3) {
+  -webkit-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+}
+
+.container i:nth-of-type(4) {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.btn_wrap:hover span {
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+  -webkit-transform: translateX(-280px);
+  transform: translateX(-280px);
+}
+
+.btn_wrap:hover i {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.dr {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 100px;
+}
+
+.download_btn {
+  position: absolute;
+  bottom: 3%;
+  left: 5%;
+  color: #1f1e1e;
+  font-size: 1.8rem;
+}
+
+.download_btn:hover {
+  color: #ffffff;
+}
+
+.download_btn {
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 10px 50px;
+  transition: all 0.2s ease-in-out;
+}
+
+.download_btn:hover {
+  background-color: cornflowerblue;
+}
+
+.social-menu ul {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.social-menu ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social-menu ul li .fab {
+  font-size: 30px;
+  line-height: 60px;
+  transition: 0.3s;
+  color: #000;
+}
+
+.social-menu ul li .fab:hover {
+  color: #fff;
+}
+
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.social-menu ul li a:hover {
+  transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #158f13;
+}
+
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #e4405f;
+}
+
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #0077b5;
+}
+
+.social-menu ul li:nth-child(4) a:hover {
+  background-color: #1da1f2;
+}
+
+.social-menu ul li:nth-child(5) a:hover {
+  background-color: blue;
+}
+
+.social-menu ul li:nth-child(6) a:hover {
+  background-color: red;
+}
+
+.certificateECI {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+#capture img {
+  z-index: 0;
+}
+
+#userName {
+  position: absolute;
+  top: 46%;
+  left: 0%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* border: 1px solid red; */
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  z-index: 10;
+}
+.H_btn {
+  position: absolute;
+  bottom: 20px;
+  right: 10%;
+  /* background-color: #000; */
+  background: rgb(240, 127, 75);
+  /* background: linear-gradient(180deg, rgba(255,96,23,0.9023984593837535) 0%, rgba(255,255,255,1) 57%, rgba(46,232,13,0.6110819327731092) 100%); */
+  color: #2f2f2f;
+  z-index: 10000 !important;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem !important;
+  color: #ffffff;
+  text-align: center;
+  line-height: 2.5;
+}
+.H_btn :hover {
+  color: #000;
+  text-decoration: none;
+}
+
+#ShowImage img {
+  width: 8%;
+  height: 8%;
+  position: absolute;
+  top: 60%;
+  left: 47%;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+
+.levels {
+  text-transform: capitalize;
+  position: absolute;
+  top: 24%;
+  left: 0%;
+  width: 100%;
+  font-size: 2.5rem;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1000px) {
+  #ShowImage img {
+    /* position: absolute;
+    top: 64%;
+    left: 45%;
+    cursor: pointer;
+    border: 1px solid red; */
+    width: 9%;
+    height: 12%;
+  }
+  /* #capture img {
+    width: 80%;
+    border: 1px solid red;
+  } */
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 800px) {
+  #ShowImage img {
+    width: 10%;
+    height: 10%;
+    top: 65%;
+  }
+  #userName {
+    font-size: 1.2rem;
+    top: 37%;
+    /* left: 0%; */
+  }
+  #capture {
+    /* border: 1px solid red;    */
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .levels {
+    top: 21%;
+    font-weight: 300;
+    font-size: 1.6rem;
+  }
+  #capture .res {
+    width: 80%;
+    border: 1px solid gray;
+  }
+  .download_btn {
+    border: 1px solid gray;
+    padding: 10px 22px;
+  }
+
+  .download_btn:hover {
+    background-color: cornflowerblue;
+  }
+  /* #capture img {
+    width: 80%;
+    border: 1px solid red;
+  } */
+}
+
+/* @media only screen and (max-width: 999px) and (min-width: 950px) {
+    #capture img {
+      width: 80%;
+      margin: 0px 10%;
+    }
+    #capture #userName {
+      margin-top: -9%;
+      margin-left: -2%;
+      font-size: 1.5rem;
+    }
+    #capture #ShowImage {
+      width: 15%;
+      margin-top: -10%;
+      margin-left: -6%;
+    }
+  }
+  
+  @media only screen and (max-width: 949px) and (min-width: 900px) {
+    #capture img {
+      width: 80%;
+      margin: 0px 10%;
+    }
+    #capture #userName {
+      margin-top: -11.5%;
+      margin-left: -2%;
+      font-size: 1.5rem;
+    }
+    #capture #ShowImage {
+      width: 15%;
+      height: 15%;
+      margin-top: -15%;
+      margin-left: -6%;
+    }
+  }
+   */
+
+@media only screen and (max-width: 549px) and (min-width: 300px) {
+  #capture img {
+    width: 100% !important;
+    margin: 26px 15%;
+    border: 5px solid gray;
+  }
+  .H_btn {
+    position: absolute;
+    top: 10px !important;
+    left: 2%;
+    width: 88px;
+    height: 27px;
+    font-size: 1.2rem !important;
+    line-height: 2.5;
+  }
+  .resC {
+    position: absolute;
+    top: 17% !important;
+    left: 10% !important;
+  }
+  .usR {
+    /* position: absolute; */
+    top: 27% !important;
+  }
+  .usI {
+    top: 14% !important;
+  }
+  #ShowImage.usI img {
+    width: 13% !important;
+    height: 4%;
+    position: absolute;
+    top: 33%;
+    left: 45%;
+    cursor: pointer;
+    /* border: 1px solid red; */
+    border: none;
+  }
+  .social-menu ul {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0%;
+    left: 57%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+  .download_btn {
+    position: absolute;
+    bottom: 28%;
+    left: 37%;
+    color: #1f1e1e;
+    font-size: 1.8rem;
+  }
+}

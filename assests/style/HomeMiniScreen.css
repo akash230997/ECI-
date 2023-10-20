@@ -1,0 +1,53 @@
+/* Home Media Querry */
+@media only screen and (max-width: 500px) and (min-width: 300px) {
+  .out {
+    z-index: 0 !important;
+    top: 52%;
+  }
+  .images_path {
+    z-index: 2 !important;
+  }
+  .out .box h1 {
+    width: 500px;
+    text-decoration: underline;
+    font-size: 2.5em;
+    position: absolute;
+    top: -26%;
+    left: 30%;
+    text-align: center;
+    color: #434242 !important;
+  }
+  .out .box .getLucky {
+    margin: 0%;
+    width: 300px;
+    padding: 0%;
+    font-size: 2rem;
+    text-align: center;
+    color: #7a83ef;
+    font-weight: 400;
+    position: relative;
+    top: -450px;
+    left: 200px;
+    font-weight: 400;
+  }
+
+  .marker {
+    /* border: 1px solid red; */
+    position: absolute;
+    /* margin-top: -120px; */
+    left: 90%;
+  }
+  .explore_btn {
+    position: absolute;
+    left: 14%;
+    top: 46%;
+    border-radius: 5px;
+    padding: 12px 54px;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    background-color: #2b83f5;
+    border: none;
+  }
+}
+/* Home Media Querry */

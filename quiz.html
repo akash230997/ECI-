@@ -1,0 +1,357 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECI Quiz</title>
+  <link rel="stylesheet" href="./assests/style/style.css" />
+  <link rel="stylesheet" href="./assests/style/style2.css" />
+  <link rel="stylesheet" href="./assests/style/media.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <!-- <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+  <script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="alerts"></div>
+  <a href="./index.html"><button type="button" class="H_btn">Home</button></a>
+  <div class="header" id="response"></div>
+  <div id="canvas"></div>
+  <section class="panel home" data-section-name="Basic" id="target_one">
+    <div class="container">
+      <div class="row" style="height: 100vh">
+        <div class="col-md-6 offset-3 align-self-center">
+          <div class="box_one">
+            <center>
+              <h1>Quiz Categories and Q&As</h1>
+            </center>
+            <hr />
+            <center>
+              <h1>Level 1: Basic</h1>
+            </center>
+            <div class="boxes">
+              <div class="box_quiz">
+                <div class="quiz-container" id="quiz">
+                  <div class="quiz-header">
+                    <h2 id="question">Question text</h2>
+                    <ul>
+                      <li>
+                        <input type="radio" name="answer" id="a" class="answer" />
+                        <label for="a" id="a_text" class="option1">Question</label>
+                      </li>
+
+                      <li>
+                        <input type="radio" name="answer" id="b" class="answer" />
+                        <label for="b" id="b_text" class="option2">Question</label>
+                      </li>
+
+                      <li>
+                        <input type="radio" name="answer" id="c" class="answer" />
+                        <label for="c" id="c_text" class="option3">Question</label>
+                      </li>
+
+                      <li>
+                        <input type="radio" name="answer" id="d" class="answer" />
+                        <label for="d" id="d_text" class="option4">Question</label>
+                      </li>
+                    </ul>
+                    <div class="errors"></div>
+                  </div>
+                  <button id="submit" class="submit-answer">
+                    Submit Answer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="title">
+                        <h1></h1>
+                    </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="panel panel1" data-section-name="Intermediate" id="target_two">
+    <div class="container">
+      <div class="row" style="height: 100vh">
+        <div class="col-md-6 offset-md-1 align-self-center">
+          <h1 class="heading_one">Level 2:Intermediate</h1>
+          <div class="boxes">
+            <div class="box_quiz">
+              <div class="quiz-container resP2 resP2" id="quizB">
+                <div class="quiz-header">
+                  <h2 id="questionB">Question text</h2>
+                  <ul>
+                    <li>
+                      <input type="radio" name="answerB" id="e" class="answerB" />
+                      <label for="e" id="a_textB" class="option1">Question</label>
+                    </li>
+
+                    <li>
+                      <input type="radio" name="answerB" id="f" class="answerB" />
+                      <label for="f" id="b_textB" class="option2">Question</label>
+                    </li>
+
+                    <li>
+                      <input type="radio" name="answerB" id="g" class="answerB" />
+                      <label for="g" id="c_textB" class="option3">Question</label>
+                    </li>
+
+                    <li>
+                      <input type="radio" name="answerB" id="h" class="answerB" />
+                      <label for="h" id="d_textB" class="option4">Question</label>
+                    </li>
+                  </ul>
+                  <div class="errors2"></div>
+                </div>
+                <button id="submitB" class="submit-answer">
+                  Submit Answer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="panel panel2" data-section-name="Advanced">
+    <div class="container">
+      <div class="row" style="height: 100vh">
+        <div class="col-md-10 offset-md-1 align-self-center">
+          <div class="quiz_three">
+            <div class="boxes">
+              <div class="box_quiz">
+                <h1>Level 3: Advanced</h1>
+                <div class="quiz-container resP2" id="quizC">
+                  <div class="quiz-header" id="target_three">
+                    <h2 id="questionC">Question text</h2>
+                    <ul>
+                      <li>
+                        <input type="radio" name="answerC" id="i" class="answerC" />
+                        <label for="i" id="a_textC" class="option1">Question</label>
+                      </li>
+
+                      <li>
+                        <input type="radio" name="answerC" id="j" class="answerC" />
+                        <label for="j" id="b_textC" class="option2">Question</label>
+                      </li>
+
+                      <li>
+                        <input type="radio" name="answerC" id="k" class="answerC" />
+                        <label for="k" id="c_textC" class="option3">Question</label>
+                      </li>
+
+                      <li>
+                        <input type="radio" name="answerC" id="l" class="answerC" />
+                        <label for="l" id="d_textC" class="option4">Question</label>
+                      </li>
+                    </ul>
+                    <div class="errors3"></div>
+                  </div>
+                  <button id="submitC" class="submit-answer">
+                    Submit Answer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="certificateInput">
+      <button type="button" id="certificatation">Certificate</button>
+    </div>
+    <div class="input_box">
+      <h1>To get your certificate, Please enter your name here</h1>
+      <div class="group">
+        <input type="text" placeholder="Full Name" id="nameE" />
+        <input type="text" placeholder="Email" id="email" />
+        <input type="text" placeholder="Address" id="address" />
+        <input type="date" name="dob" id="dob" />
+        <div class="container">
+          <input type="file" id="file" accept="image/*" hidden />
+          <div class="img-area" data-img="">
+            <i class="bx bxs-cloud-upload icon"></i>
+            <h3>Upload Image</h3>
+            <p>Image size must be less than <span>2MB</span></p>
+          </div>
+          <button class="select-image">Please Select Your Photo</button>
+        </div>
+      </div>
+      <!-- <input type="file" accept="image/jpeg, image/png, image/jpg">
+            <output></output> -->
+
+      <button type="button" class="c_btn" id="download_C">Submit</button>
+      <!-- <a href="./certification.html" download="./certification.html">
+            </a> -->
+    </div>
+  </section>
+  <div id="splash">
+    <div class="anim">
+      <div id="loader">
+        <svg version="1.1" width="60px" height="70px" viewBox="0 0 60 70">
+          <defs>
+            <filter id="f1" x="0" y="0">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+              z
+            </filter>
+          </defs>
+          <g id="airplane">
+            <path fill="#000" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+                h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+                c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+                c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+                c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+                C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(44,0) rotate(90 0 0)" />
+          </g>
+          <g id="shadow" transform="scale(.9)">
+            <path fill="#000" fill-opacity="0.3" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+                    h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+                    c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+                    c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+                    c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+                    C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(64,30) rotate(90 0 0)"
+              filter="url(#f1)" />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="level1C">
+    <div class="row pm-certificate-body">
+      <div class="certificateECI">
+        <div id="capture">
+          <img src="./certificate for ECI.png" alt="" />
+          <h1 class="levels">CERTIFICATE FOR LEVEL 1</h1>
+          <span id="userName1"></span>
+          <span id="ShowImage1"></span>
+        </div>
+      </div>
+      <canvas id="my-canvas"></canvas>
+      <div class="lvlcertificates">
+        <button><a href="#target_two">Proceed To Level 2</a></button>
+        <button type="button" class="btnScreenShot" id="btnDownload">
+          Download
+        </button>
+        <div id="output"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="level2C">
+    <div class="row pm-certificate-body">
+      <div class="certificateECI">
+        <div id="capture2">
+          <img src="./certificate for ECI.png" alt="" />
+          <h1 class="levels2">CERTIFICATE FOR LEVEL 2</h1>
+          <span id="userName2"></span>
+          <span id="ShowImage2"></span>
+        </div>
+      </div>
+      <canvas id="my-canvas"></canvas>
+      <div class="lvlcertificates">
+        <button><a href="#target_three">Proceed To Level 3</a></button>
+        <button type="button" class="btnScreenShot2" id="btnDownload2">
+          Download
+        </button>
+        <div id="output2"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    //var $btn = document.getElementById('btnScreenShot');
+    //$btn.addEventListener('mousedown', onScreenShotClick);
+
+    //function download(canvas, filename) {
+    //    // create an "off-screen" anchor tag
+    //    const a = document.createElement('a');
+    //
+    //    // the key here is to set the download attribute of the a tag
+    //    a.download = filename;
+    //
+    //    // convert canvas content to data-uri for link. When download
+    //    // attribute is set the content pointed to by link will be
+    //    // pushed as "download" in HTML5 capable browsers
+    //    a.href = canvas.toDataURL("image/png;base64");
+    //
+    //    a.style.display = 'none';
+    //    document.body.appendChild(a);
+    //    a.click();
+    //    document.body.removeChild(a);
+    //}
+    //
+    //function onScreenShotClick(event) {
+    //    const element = document.querySelector("#capture");
+    //
+    //    html2canvas(element).then((canvas) => {
+    //        download(canvas, 'screenshot');
+    //    });
+    //}
+  </script>
+  <script>
+    const selectImage = document.querySelector('.select-image');
+    const inputFile = document.querySelector('#file');
+    const imgArea = document.querySelector('.img-area');
+
+    selectImage.addEventListener('click', function () {
+      inputFile.click();
+    });
+
+    inputFile.addEventListener('change', function () {
+      const image = this.files[0];
+      if (image.size < 2000000) {
+        const reader = new FileReader();
+        reader.onload = () => {
+          const allImg = imgArea.querySelectorAll('img');
+          allImg.forEach((item) => item.remove());
+          var imgUrl = reader.result;
+          const img = document.createElement('img');
+          img.src = imgUrl;
+          imgArea.appendChild(img);
+          imgArea.classList.add('active');
+          imgArea.dataset.img = image.name;
+          window.localStorage.setItem('imgUrl', imgUrl);
+        };
+        reader.readAsDataURL(image);
+      } else {
+        alert('Image size more than 2MB');
+      }
+    });
+  </script>
+  <!--  -->
+  <script src="./assests/Javascript/questions.js"></script>
+  <!--  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+  <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/107/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="./assests/Javascript/script.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+  <script src="./assests/Javascript/quiz.js"></script>
+  <script src="./assests/Javascript/manageQuize.js"></script>
+</body>
+
+</html>

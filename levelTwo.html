@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Roboto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .certificate-container {
+            padding: 50px;
+            width: 1024px;
+        }
+
+        .certificate {
+            border: 20px solid #0C5280;
+            padding: 25px;
+            height: 600px;
+            position: relative;
+        }
+
+        .certificate:after {
+            content: '';
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            position: absolute;
+            background: rgb(255, 65, 23);
+            background: linear-gradient(180deg, rgba(255, 65, 23, 1) 0%, rgba(255, 255, 255, 1) 58%, rgba(46, 232, 13, 1) 100%);
+            background-size: 100%;
+            z-index: -1;
+        }
+
+        .certificate-header>.logo {
+            width: 80px;
+            height: 80px;
+        }
+
+        .certificate-title {
+            text-align: center;
+        }
+
+        .certificate-body {
+            text-align: center;
+        }
+
+        h1 {
+
+            font-weight: 400;
+            font-size: 48px;
+            color: #0C5280;
+        }
+
+        .student-name {
+            font-size: 24px;
+        }
+
+        .certificate-content {
+            margin: 0 auto;
+            width: 750px;
+        }
+
+        .about-certificate {
+            width: 380px;
+            margin: 0 auto;
+        }
+
+        .topic-description {
+
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="certificate-container">
+        <div class="certificate">
+            <div class="water-mark-overlay"></div>
+            <div class="certificate-header">
+                <img src="https://cdn.discordapp.com/attachments/339446218428121098/1115925800231911434/image_2.png"
+                    class="logo" alt="">
+            </div>
+            <div class="certificate-body">
+
+                <p class="certificate-title"><strong style="font-size: 3rem;">Election Commission of India</strong>
+                </p>
+                <h1>Certificate of Completion Level 2</h1>
+                <p class="student-name"></p>
+                <div class="certificate-content">
+                    <div class="about-certificate">
+                        <p>
+                            Has completed Level 1 Questions on topic Voter Services
+                        </p>
+                    </div>
+                    <p class="topic-title">
+                        The Topic consists of Continuity hours and includes the following:
+                    </p>
+                    <div class="text-center">
+                        <p class="topic-description text-muted">Contract adminitrator - Types of claim - Claim Strategy
+                            - Delay analysis - Thepreliminaries to a claim - The essential elements to a successful
+                            claim - Responses - Claim preparation and presentation </p>
+                    </div>
+                </div>
+                <div class="certificate-footer text-muted">
+                    <p>To get Level 3 certification</p>
+                    <img src="./Election Commision Certificates.png" width=20%" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#target_three">Level 3</a>
+</body>
+
+</html>
