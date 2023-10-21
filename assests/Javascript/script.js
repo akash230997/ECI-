@@ -1,4 +1,5 @@
 const globalCode = () => {
+
     var globe = planetaryjs.planet();
     // Load our custom `autorotate` plugin; see below.
 

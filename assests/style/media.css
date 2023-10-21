@@ -46,16 +46,26 @@
     padding-top: 30px;
   }
   .images_path {
-    /* border: 1px solid red; */
+    width: 45%;
     margin-top: 400px;
     min-height: 100px;
     position: absolute;
-    top: -30%;
-    /* z-index: 9999999; */
+    top: auto;
+    bottom: 26%;
+    left: 12%;
+    flex-direction: row;
   }
-  .images_path img {
-    border: 2px solid #d98338;
-    width: 150%;
+  .explore_btn {
+    position: absolute;
+    left: 16%;
+    top: 48%;
+    font-size: 2rem;
+    border-radius: 5px;
+    padding: 10px 50px;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    background-color: #2b83f5;
+    border: none;
   }
 }
 
@@ -100,106 +110,11 @@
     font-size: 2.5rem;
   }
 }
-/* @media only screen and (max-width: 549px) and (min-width: 450px) {
-  canvas {
-    margin-right: 5% !important;
-  }
-} */
-
-/* Certificate */
-@media only screen and (max-width: 1350px) and (min-width: 1000px) {
-  /* .H_btn {
-    right: 15% !important;
-  } */
-}
-
-@media only screen and (max-width: 999px) and (min-width: 700px) {
-  /* .pm-certificate-container {
-    border: 5px solid red !important;
-    width: 80% !important;
-  }
-  .pm-certificate-container .pm-certificate-border {
-    background-color: antiquewhite;
-    width: 600px !important;
-    height: 500px;
-    top: 52%;
-    margin-left: -300px !important;
-  }
-  .logo_govt {
-    top: 8% !important;
-  }
-  .logo_govt2 {
-    top: 8% !important;
-    right: 0%;
-  }
-
-  .logo_govt img {
-    width: 60%;
-  }
-  .logo_govt2 img {
-    width: 60%;
-  } */
-  /* .buttons {
-    border: 1px solid red;
-  } */
-  /* .buttons {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    border: 1px solid red;
-  }
-  .H_btn {
-    right: 20% !important;
-  } */
-}
 
 @media only screen and (max-width: 999px) and (min-width: 800px) {
-  /* .pm-certificate-container {
-    border: 5px solid red !important;
-    width: 80% !important;
-  }
-  .pm-certificate-container .pm-certificate-border {
-    background-color: antiquewhite;
-    width: 600px !important;
-    height: 500px;
-    top: 52%;
-    margin-left: -300px !important;
-  }
-  .logo_govt {
-    top: 8% !important;
-  }
-  .logo_govt2 {
-    top: 8% !important;
-    right: 0%;
-  }
-
-  .logo_govt img {
-    width: 60%;
-  }
-  .logo_govt2 img {
-    width: 60%;
-  } */
   .H_btn {
     right: 20% !important;
   }
-  /* #capture img {
-    width: 80%;
-    margin: 0px 10%;
-    border: 1px solid gray;
-  }
-  #capture #userName {
-    
-    margin-top: -15%;
-    margin-left: -3%;
-    font-size: 1.3rem;
-  }
-  #capture #ShowImage {
-    width: 13%;
-    height: 10% !important;
-    margin-top: -20%;
-    margin-left: -5%;
-    display: inline-block;
-  } */
 }
 
 @media only screen and (max-width: 800px) and (min-width: 750px) {
@@ -212,18 +127,13 @@
     border: 1px solid gray;
   }
   #capture #userName {
-    /* top: 39%;
-    left: 45%; */
     margin-top: -18%;
     margin-left: -3%;
     font-size: 1.3rem;
-    /* color: red; */
   }
   #capture #ShowImage {
-    /* border: 1px solid red; */
     width: 13%;
     display: none !important;
-    /* height: 5% !important; */
     margin-top: -30%;
     margin-left: -5%;
     display: inline-block;
@@ -239,18 +149,13 @@
     border: 1px solid gray;
   }
   #capture #userName {
-    /* top: 39%;
-    left: 45%; */
     margin-top: -22.5%;
     margin-left: -3%;
     font-size: 1.3rem;
-    /* color: red; */
   }
   #capture #ShowImage {
-    /* border: 1px solid red; */
     width: 13%;
     display: none !important;
-    /* height: 5% !important; */
     margin-top: -30%;
     margin-left: -5%;
     display: inline-block;
@@ -272,10 +177,6 @@ label {
     padding: 0;
     margin-left: -1rem;
   }
-
-  /* .offset-md-1 {
-    margin-left: 22% !important;
-  } */
 
   canvas {
     width: 488px !important;
@@ -346,9 +247,6 @@ label {
   .resP2 {
     margin-left: -22%;
   }
-  /* .resP2 {
-    margin-left: -20% !important;
-  } */
   .h1,
   h1 {
     font-size: 2rem !important;
@@ -362,7 +260,6 @@ label {
     margin-top: 0.8rem;
   }
   .input_box {
-    /* border: 1px solid red; */
     border-radius: 20px;
     width: 455px;
     min-height: 100px;
@@ -373,12 +270,10 @@ label {
     left: 2%;
     animation: scale-in-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     padding: 70px 5px;
-    /* padding-bottom: 60px; */
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: #2f2f2f; */
     background-image: linear-gradient(
       to bottom,
       #e77b49d3,
@@ -397,15 +292,9 @@ label {
   }
   .level1C {
     width: 125vw;
-    /* height: 100vh; */
   }
   .row {
-    /* display: -ms-flexbox; */
     display: block !important;
-    /* -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px; */
   }
   .lvlcertificates button {
     display: inline-block;
@@ -470,9 +359,6 @@ label {
     font-size: 0.9rem !important;
     text-align: center;
   }
-  /* .l2levels{
-    position: abso;
-  } */
   #userName2 {
     top: 36% !important;
     font-size: 0.8rem;
@@ -505,7 +391,7 @@ label {
     background: none !important;
   }
   .page {
-    width: 100vw;
+    /* width: 100%; */
     /* border:= 1px solid red; */
     height: 100vh;
     z-index: 999999999;
@@ -559,9 +445,12 @@ label {
     top: 30%;
     left: 32%;
     cursor: pointer;
-    /* border: 1px solid red; */
   }
   .social-menu ul {
     bottom: 15%;
+  }
+  #rotatingGlobe {
+    margin-top: 26% !important;
+    margin-left: 20% !important;
   }
 }

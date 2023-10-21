@@ -1619,3 +1619,7 @@ font-size:1.5rem;
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
 }
+
+/* @media only screen and (max-width: 549px) and (min-width: 300px){
+
+} */
