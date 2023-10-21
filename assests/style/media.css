@@ -47,11 +47,10 @@
   }
   .images_path {
     width: 45%;
-    margin-top: 400px;
     min-height: 100px;
     position: absolute;
     top: auto;
-    bottom: 26%;
+    bottom: 12%;
     left: 12%;
     flex-direction: row;
   }
@@ -180,7 +179,7 @@ label {
 
   canvas {
     width: 488px !important;
-    height: 1100px !important;
+    height: 1330px !important;
   }
 
   #capture img {
@@ -232,9 +231,9 @@ label {
   .box_one {
     width: 95vw;
     height: 80vh;
-    margin-left: -15%;
+    margin-left: 0%;
     font-family: "Oswald", sans-serif;
-    /* border: 1px solid red; */
+    margin-top: 0%;
   }
   .H_btn {
     top: 90px;
@@ -245,7 +244,7 @@ label {
     width: 440px;
   }
   .resP2 {
-    margin-left: -22%;
+    margin-left: 0;
   }
   .h1,
   h1 {
@@ -453,4 +452,23 @@ label {
     margin-top: 26% !important;
     margin-left: 20% !important;
   }
+
+  .offset-3 {
+    margin-left: 0% !important;
+  }
+  .panel .row {
+    padding-top: 50% !important;
+  }
 }
+
+/* @media (max-width: 550px), (max-height: 500px) {
+  .images_path {
+    width: 45% !important;
+    min-height: 100px !important;
+    position: absolute !important;
+    top: auto !important;
+    bottom: 10% !important;
+    left: 12% !important;
+    flex-direction: row !important;
+  }
+} */
