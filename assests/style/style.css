@@ -1335,7 +1335,7 @@ background: linear-gradient(167deg, rgba(255, 96, 23, 0.662) 0%, rgba(255,255,25
   height: 100vh;
   /* border: 5px solid red; */
   background-color: #046a38;
-  z-index: 999999;
+  z-index: 0;
   font-family: Roboto;
   display: none;
   /* display: inline-block; */
@@ -1357,12 +1357,12 @@ background: linear-gradient(167deg, rgba(255, 96, 23, 0.662) 0%, rgba(255,255,25
 }
 .lvlcertificates {
   display: flex;
-  width: 30%;
+  width: 80%;
   position: relative;
-  left: 35%;
+  left: 10%;
   margin-top: 50px;
   justify-content: space-evenly;
-/* border: 1px solid red; */
+  /* border: 1px solid red; */
 }
 .lvlcertificates button{
   display: inline-block;
@@ -1445,7 +1445,7 @@ background: linear-gradient(167deg, rgba(255, 96, 23, 0.662) 0%, rgba(255,255,25
   height: 100vh;
   /* border: 5px solid red; */
   background-color: #046a38;
-  z-index: 999999;
+  z-index: 0;
   font-family: Roboto;
   display:none;
   /* display:flex; */

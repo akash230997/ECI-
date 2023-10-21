@@ -179,11 +179,14 @@ label {
 
   canvas {
     width: 488px !important;
-    height: 1330px !important;
+    /* height: 1330px !important; */
   }
 
   #capture img {
-    width: 80%;
+    width: 90%;
+    position: absolute;
+    top: 25%;
+    right: -5%;
     margin: 10px 10%;
     /* border: 5px solid red; */
   }
@@ -290,7 +293,7 @@ label {
     );
   }
   .level1C {
-    width: 125vw;
+    width: 103%;
   }
   .row {
     display: block !important;
@@ -319,57 +322,59 @@ label {
     /* border: 1px solid red; */
     display: inline-block;
     position: absolute;
-    top: 36.5%;
-    width: 100%;
+    top: 45.2%;
+    width: 82%;
     /* height: 20%; */
     text-align: center;
     color: #000;
-    left: 0%;
-    font-size: 0.7rem;
+    left: 10%;
+    display: inline-block;
+    font-size: 0.6rem;
   }
   canvas {
     margin-left: 0% !important;
   }
   #ShowImage1 {
     position: absolute;
-    top: 43%;
-    left: 40%;
+    top: 52%;
+    left: 45%;
     cursor: pointer;
-    width: 20%;
+    width: 10%;
   }
   .level2C {
     width: 125vw;
     height: 100vh;
   }
   .level2C {
-    width: 125vw;
+    width: 103%;
     height: 100vh;
   }
   .level2C img {
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
   }
   .levels2 {
     /* border: 1px solid red; */
     text-transform: capitalize;
     position: absolute;
-    top: 26%;
+    top: 16.6%;
     left: 32%;
     font-size: 0.9rem !important;
     text-align: center;
   }
   #userName2 {
-    top: 36% !important;
-    font-size: 0.8rem;
+    top: 30% !important;
+    font-size: 0.6rem;
     height: 2%;
   }
   #ShowImage2 {
     position: absolute;
-    top: 44%;
-    left: 42%;
+    top: 40%;
+    left: 46%;
     cursor: pointer;
-    width: 20%;
+    width: 10%;
   }
+
   .out .box p {
     margin-top: -720px;
   }
@@ -425,8 +430,8 @@ label {
     /* border: 1px solid red; */
     text-transform: capitalize;
     position: absolute;
-    top: 27%;
-    left: 28%;
+    top: 32.5%;
+    left: 31%;
     font-size: 1rem !important;
     text-align: center;
   }
