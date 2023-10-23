@@ -1344,8 +1344,8 @@ background: linear-gradient(167deg, rgba(255, 96, 23, 0.662) 0%, rgba(255,255,25
   background-color: #046a38;
   z-index: 0;
   font-family: Roboto;
-  /* display: none; */
-  display: inline-block;
+  display: none;
+  /* display: inline-block; */
   /* visibility: hidden; */
   flex-direction: column;
   justify-content: center;
@@ -1454,8 +1454,8 @@ background: linear-gradient(167deg, rgba(255, 96, 23, 0.662) 0%, rgba(255,255,25
   background-color: #046a38;
   z-index: 0;
   font-family: Roboto;
-  /* display:none; */
-  display:flex;
+  display:none;
+  /* display:flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
