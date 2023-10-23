@@ -152,7 +152,9 @@ $(document).ready(function () {
       var target_one = document.getElementById('target_one');
       alerts.style.display = 'inline-block';
       alerts.innerHTML = `<div class="alert alert-danger" role="alert" style="padding: 50px; font-size: 1.4rem;">
-                    Need to clear Level 1 First. <span id="cencel_alert"><i class="fas fa-window-close"></i></span>
+      <div><h2  class="Modal_heading">Hello, I am a modal!</h2></div>
+                    <p>Need to clear Level 1 First. </p>
+                    <span id="cencel_alert"><i class="fas fa-window-close"></i></span>
                   </div>`;
       //alert('')
       target_one.scrollIntoView({ behavior: 'smooth' }, true);
