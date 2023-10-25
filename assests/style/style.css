@@ -1301,20 +1301,26 @@ background: linear-gradient(167deg, rgba(255, 96, 23, 0.662) 0%, rgba(255,255,25
 	background: var(--dark-blue);
 }
 .alerts{
-  /* border: 1px solid red; */
-  width: 40%;
+  border-radius: 10%;
+  width: 50%;
   height: 100px;
-  /* padding: 80px; */
   display: none;
   position:  fixed;
   top: 42%;
-  left: 35%;
+  left: 25%;
   z-index: 99998;
+}
+.Modal_heading{
+  text-align: center !important;
+  color: #fff !important;
+}
+.alert {
+  border-radius: 10px !important;
 }
 .alert-danger{
   text-align: center;
   color: #fff !important;
-  background-color: #89849b  !important;
+  background-color: #3f3939 !important;
 }
 
 #cencel_alert{
@@ -1329,6 +1335,7 @@ background: linear-gradient(167deg, rgba(255, 96, 23, 0.662) 0%, rgba(255,255,25
 #cencel_alert:hover{
   color: red;
 }
+
 
 .level2C{
   width: 100%;
