@@ -1,4 +1,33 @@
 /* Home Screeens */
+#capture #ShowImage1 img {
+  width: 15%;
+}
+
+#capture2 #ShowImage2 img {
+  width: 15%;
+}
+
+.levels {
+  text-transform: capitalize;
+  position: absolute;
+  top: 22%;
+  left: 42%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#ShowImage2 {
+  position: absolute;
+  top: 60%;
+  left: 44%;
+  cursor: pointer;
+}
+
+#userName2 {
+  top: 43.5% !important;
+  left: -2%;
+}
+
 @media only screen and (max-width: 1699px) and (min-width: 1400px) {
   .out {
     /* border: 1px solid red; */
@@ -169,6 +198,9 @@ label {
 /* Mobile */
 
 @media only screen and (max-width: 549px) and (min-width: 300px) {
+  #capture #ShowImage1 img {
+    width: 100% !important;
+  }
   #response {
     visibility: hidden;
   }
@@ -180,7 +212,7 @@ label {
   }
 
   canvas {
-    width: 488px !important;
+    width: 100% !important;
     /* height: 1330px !important; */
   }
 
@@ -318,9 +350,10 @@ label {
     font-size: 0.8rem !important;
     text-align: center;
   }
+
   #userName1 {
     position: absolute;
-    top: 50%;
+    top: 49%;
     left: 50%;
     transform: translate(-50%, -900%);
     font-size: 0.6rem;
@@ -348,12 +381,10 @@ label {
     width: 90%;
   }
   .levels2 {
-    /* border: 1px solid red; */
     text-transform: capitalize;
     position: absolute;
-    top: 13.5%;
-    left: 32%;
-    /* transform: translate(-43%, -664%); */
+    top: 17.5%;
+    left: 34%;
     font-size: 0.9rem !important;
     text-align: center;
   }
@@ -451,6 +482,12 @@ label {
   }
   .panel .row {
     padding-top: 50% !important;
+  }
+  #capture2 {
+    position: relative;
+  }
+  #capture2 #ShowImage2 img {
+    width: 100%;
   }
 }
 
