@@ -48,28 +48,10 @@ function loadQuiz() {
 `;
     }
   }
-
-  //const currentQuizData2 = quizData_two[currentQuiz];
-
-  //questionElB.innerText = currentQuizData2.question;
-  //a_textB.innerText = currentQuizData2.e;
-  //b_textB.innerText = currentQuizData2.f;
-  //c_textB.innerText = currentQuizData2.g;
-  //d_textB.innerText = currentQuizData2.h;
-
-  //const currentQuizData3 = quizData_three[currentQuiz];
-
-  //questionElC.innerText = currentQuizData3.question;
-  //a_textC.innerText = currentQuizData3.i;
-  //b_textC.innerText = currentQuizData3.j;
-  //c_textC.innerText = currentQuizData3.k;
-  //d_textC.innerText = currentQuizData3.l;
 }
 
 function deselectAnswers() {
   answerEls.forEach((answerEl) => (answerEl.checked = false));
-  //answerElsB.forEach((answerElB) => (answerElB.checked = false));
-  //answerElsC.forEach((answerElC) => (answerElC.checked = false));
 }
 
 function getSelected() {
@@ -80,16 +62,6 @@ function getSelected() {
       answer = answerEl.id;
     }
   });
-  //answerElsB.forEach((answerEl) => {
-  //    if (answerEl.checked) {
-  //        answer = answerEl.id;
-  //    }
-  //});
-  //answerElsC.forEach((answerEl) => {
-  //    if (answerEl.checked) {
-  //        answer = answerEl.id;
-  //    }
-  //});
   return answer;
 }
 $(document).ready(function () {
@@ -133,6 +105,12 @@ $(document).ready(function () {
     var closestUL = $(this).closest('.quiz-container').find('ul');
     var closestLI = closestUL.find('li');
     console.log('quizData.length', score, ' || ', selectedQuizData.length);
+
+    // Testing Validation
+
+
+    // Testing Validation
+
     if (level === 3 && (totalSelected < 32 || score2 < 7)) {
       var target_two = document.getElementById('target_two');
       alerts.style.display = 'inline-block';
@@ -152,7 +130,7 @@ $(document).ready(function () {
       var target_one = document.getElementById('target_one');
       alerts.style.display = 'inline-block';
       alerts.innerHTML = `<div class="alert alert-danger" role="alert" style="padding: 50px; font-size: 1.4rem;">
-      <div><h2  class="Modal_heading">Hello, I am a modal!</h2></div>
+      <div><h2  class="Modal_heading"></h2></div>
                     <p>Need to clear Level 1 First. </p>
                     <span id="cencel_alert"><i class="fas fa-window-close"></i></span>
                   </div>`;
@@ -608,11 +586,69 @@ function loadQuiz3() {
 
   const currentQuizData3 = quizData_three[currentQuiz3];
 
+  const i = document.getElementById('i');
+  const j = document.getElementById('j');
+  const k = document.getElementById('k');
+  const l = document.getElementById('l');
+
+  if (currentQuizData3.i !== undefined) {
+    i.style.display = "inline-block";
+    a_textC.innerText = currentQuizData3.i;
+  } else {
+    a_textC.innerText = '';
+
+    console.log(i);
+    i.style.innerHTML = '';
+    i.style.display = "none";
+  }
+
+  if (currentQuizData3.j !== undefined) {
+    j.style.display = "inline-block";
+    b_textC.innerText = currentQuizData3.j;
+
+  } else {
+    b_textC.innerText = '';
+
+    console.log(j);
+    j.style.innerHTML = '';
+    j.style.display = "none";
+  }
+
+  if (currentQuizData3.k !== undefined) {
+    k.style.display = "inline-block";
+    c_textC.innerText = currentQuizData3.k;
+
+  } else {
+    c_textC.innerText = '';
+
+    console.log(k);
+    k.style.innerHTML = '';
+    k.style.display = "none";
+  }
+
+  if (currentQuizData3.l !== undefined) {
+    l.style.display = "inline-block";
+    d_textC.innerText = currentQuizData3.l;
+  } else {
+    d_textC.innerText = '';
+
+    console.log(l);
+    l.style.display = "none";
+  }
+
+  if (
+    currentQuizData3.i === undefined &&
+    currentQuizData3.j === undefined &&
+    currentQuizData3.k === undefined &&
+    currentQuizData3.l === undefined
+  ) {
+    // If all options are undefined, move to the next question
+    currentQuiz3++;
+    loadQuiz3();
+    return;
+  }
+
   questionElC.innerText = currentQuizData3.question;
-  a_textC.innerText = currentQuizData3.i;
-  b_textC.innerText = currentQuizData3.j;
-  c_textC.innerText = currentQuizData3.k;
-  d_textC.innerText = currentQuizData3.l;
 }
 
 function deselectAnswers3() {

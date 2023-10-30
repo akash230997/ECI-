@@ -53,14 +53,19 @@ function onScreenShotClick(event) {
 
 let im1 = "./image (2).png";
 var value = localStorage.getItem('myValue');
-console.log(value);
+const usR = document.querySelector("#userName");
+usR.innerHTML = value
+console.log("value : ", value);
 //console.log(im1);
 window.onload = function () {
+    var value = localStorage.getItem('myValue');
+    console.log("value : ", value);
 
     var output = document.getElementById('userName');
     // output.innerHTML = value;
     const ShowImage = document.querySelector('#ShowImage');
     const imgUrl = window.localStorage.getItem("imgUrl");
+    console.log("imgUrl : ", imgUrl);
     if (imgUrl) {
         const img = document.createElement('img');
         img.src = imgUrl;
