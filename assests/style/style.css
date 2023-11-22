@@ -328,9 +328,9 @@
 
 /* Loader */
 
-body {
+html {
   font-size: 18px;
-  line-height: 1.6;
+  /* line-height: 1.6; */
   background-image: linear-gradient(
     to bottom,
     #e77b49d3,
@@ -346,18 +346,19 @@ body {
     #008776,
     #046a38
   );
+  /* border: 1px solid red; */
+  height: 100%;
   /* background: radial-gradient(ellipse at center, #f5f7fa 0%, #c3cfe2 100%); */
   /* background-color: aqua; */
 }
 
-html,
+/* html,
 body {
-  /* width: 100% !important; */
   height: 100%;
-}
-body {
+} */
+/* body {
   display: flex;
-}
+} */
 #rotatingGlobe {
   /* border: 1px solid red; */
   margin: auto auto;
@@ -379,6 +380,24 @@ body {
   top: 50%;
   transform: translate(-30%, -70%);
 }
+/* Header */
+.Appheader {
+  width: 100%;
+  height: 80px;
+  background-color: #4f73c8;
+  padding: 0% 12%;
+  border-bottom: 2px solid;
+  border-color: rgb(80, 210, 154);
+}
+.container {
+  /* border: 1px solid red; */
+  height: 100%;
+}
+.logo {
+  height: 100%;
+  cursor: pointer;
+}
+/* Header */
 
 /*==========  Desktop First  ==========*/
 
@@ -541,7 +560,7 @@ body {
   /* right: 0%; */
   float: right !important;
   border-radius: 10px;
-  border: 3px solid #d98338;
+  border: 2px solid #d98338;
   cursor: pointer;
   margin-top: 15px;
 }
@@ -556,6 +575,7 @@ body {
   font-family: "Oswald", sans-serif;
   background-color: #2b83f5;
   border: none;
+  cursor: pointer;
 }
 @-webkit-keyframes slide-fwd-center {
   0% {
@@ -591,9 +611,9 @@ body {
   font-size: 2.4em;
   /* border: 1px solid red; */
   position: absolute;
-  top: 0%;
+  top: 15%;
   /* color: #f1ab66b9 !important; */
-  color: #000 !important;
+  color: #fff !important;
   margin-top: -100px;
 
   /** TEXT GRADIENT */
@@ -611,7 +631,7 @@ body {
   text-align: center;
   /* color: rgb(46, 47, 37); */
   color: #fff;
-  margin-top: -800px;
+  margin-top: 74%;
   font-weight: 400;
 }
 /* body,
@@ -622,6 +642,7 @@ html {
   /* border: 1px solid red; */
   position: absolute;
   margin-top: -120px;
+  cursor: pointer;
 }
 /* #chart{
   background-color: #194c8f;
@@ -1023,12 +1044,49 @@ html {
   box-sizing: border-box;
 }
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   margin: 0;
-  display: block;
-  box-sizing: border-box;
+  /* display: block;
+  box-sizing: border-box; */
   font-family: Source Sans Pro, Roboto, sans-serif;
 }
+.footer {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0%;
+  background-color: #466abd;
+}
+.upFooter {
+  border-bottom: 1px solid gray;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.copyright {
+  font-size: 0.8rem;
+  color: rgb(214, 214, 214);
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 350px;
+  /* border: 1px solid #000; */
+}
+.iconsSocial {
+  width: 40px;
+  height: 40px;
+  /* margin-top: 5px; */
+  padding: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #fff;
+  font-size: 1rem;
+  line-height: 2;
+  text-align: center;
+}
+
 .header {
   position: fixed;
   z-index: 1000;
@@ -1572,6 +1630,7 @@ a {
   z-index: 0;
   font-family: Roboto;
   display: none;
+  padding: 25px;
   /* display: flex; */
   flex-direction: column;
   justify-content: center;
@@ -1795,3 +1854,24 @@ a {
 /* @media only screen and (max-width: 549px) and (min-width: 300px){
 
 } */
+@media only screen and (max-width: 749px) and (min-width: 250px) {
+  /* Header & Footer */
+  .Appheader {
+    padding: 0% 0% !important;
+    /* border: 1px solid red; */
+  }
+  .out .box h1 {
+    font-size: 1.5rem !important;
+    padding-top: 0% !important;
+    top: 10%;
+  }
+  .out .box p:nth-child(2) {
+    margin-top: -96%;
+  }
+  .copyright {
+    font-size: 1rem;
+    line-height: 2;
+    color: rgb(214, 214, 214);
+  }
+  /* Header & Footer */
+}

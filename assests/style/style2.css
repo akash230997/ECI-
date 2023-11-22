@@ -216,13 +216,12 @@
   /* border: 3px solid orange; */
 }
 
-.pm-certificate-container .pm-certificate-border {
-  /* border: 5px solid #e4405f; */
-  /* display: flex;
+/* .pm-certificate-container .pm-certificate-border {
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; */
-}
+  align-items: center;
+} */
 
 .pm-certificate-container .pm-certificate-border .pm-certificate-title {
   position: relative;
