@@ -73,6 +73,10 @@
   .out .box h1 {
     font-size: 2rem;
     padding-top: 30px;
+    top: -12%;
+  }
+  .out .box p:nth-child(2) {
+    margin-top: -90%;
   }
   .images_path {
     width: 45%;
