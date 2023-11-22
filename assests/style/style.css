@@ -1203,7 +1203,7 @@ a {
   background: rgb(240, 127, 75);
   /* background: linear-gradient(180deg, rgba(255,96,23,0.9023984593837535) 0%, rgba(255,255,255,1) 57%, rgba(46,232,13,0.6110819327731092) 100%); */
   color: #2f2f2f;
-  z-index: 100 !important;
+  z-index: 9999 !important;
   cursor: pointer;
   width: 100px;
   height: 50px;
