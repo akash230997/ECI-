@@ -43,13 +43,13 @@ $('#btnDownload').click(function () {
 //    document.body.removeChild(a);
 //}
 
-function onScreenShotClick(event) {
-    const element = document.querySelector("#capture");
+// function onScreenShotClick(event) {
+//     const element = document.querySelector("#capture");
 
-    html2canvas(element).then((canvas) => {
-        download(canvas, 'screenshot');
-    });
-}
+//     html2canvas(element).then((canvas) => {
+//         download(canvas, 'screenshot');
+//     });
+// }
 
 let im1 = "./image (2).png";
 var value = localStorage.getItem('myValue');
@@ -75,20 +75,20 @@ window.onload = function () {
     }
 };
 
-function downloadAsPDF() {
-    const doc = new jsPDF();
+// function downloadAsPDF() {
+//     const doc = new jsPDF();
 
-    // Get the HTML content to be converted to PDF
-    const htmlContent = document.documentElement.outerHTML;
+//     // Get the HTML content to be converted to PDF
+//     const htmlContent = document.documentElement.outerHTML;
 
-    // Convert HTML to PDF
-    doc.html(htmlContent, {
-        callback: function (pdf) {
-            // Save the PDF file
-            pdf.save('downloaded.pdf');
-        }
-    });
-}
+//     // Convert HTML to PDF
+//     doc.html(htmlContent, {
+//         callback: function (pdf) {
+//             // Save the PDF file
+//             pdf.save('downloaded.pdf');
+//         }
+//     });
+// }
 function autoClick() {
     $("#download").click();
 }
@@ -99,6 +99,8 @@ $(document).ready(function () {
     $("#download").on('click', function () {
 
         html2canvas(element, {
+            allowTaint: true,
+            useCORS: true,
             onrendered: function (canvas) {
                 var imageData = canvas.toDataURL("image/jpg");
                 var newData = imageData.replace(/^data:image\/jpg/, "data:application/octet-stream");
