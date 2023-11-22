@@ -1,0 +1,88 @@
+/* Header & Footer */
+.Appheader {
+  width: 100%;
+  height: 80px;
+  background-color: #4f73c8;
+  padding: 0% 12%;
+  border-bottom: 2px solid;
+  border-color: rgb(80, 210, 154);
+}
+
+.container {
+  /* border: 1px solid red; */
+  height: 100%;
+}
+
+.logo {
+  height: 100%;
+  cursor: pointer;
+}
+
+/* -------------------Footer---------------------- */
+
+.footer {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0%;
+  background-color: #466abd;
+}
+
+.upFooter {
+  border-bottom: 1px solid gray;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: rgb(214, 214, 214);
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 350px;
+  /* border: 1px solid #000; */
+}
+
+.iconsSocial {
+  width: 40px;
+  height: 40px;
+  /* margin-top: 5px; */
+  padding: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #fff;
+  font-size: 1rem;
+  line-height: 2;
+  text-align: center;
+}
+
+@media only screen and (max-width: 749px) and (min-width: 250px) {
+  /* Header & Footer */
+  .Appheader {
+    padding: 0% 0% !important;
+    /* border: 1px solid red; */
+  }
+  .out .box h1 {
+    font-size: 1.5rem !important;
+    padding-top: 0% !important;
+    top: 10%;
+    font-weight: 600;
+  }
+  .out .box p:nth-child(2) {
+    margin-top: -96%;
+  }
+  .copyright {
+    font-size: 1rem;
+    line-height: 2;
+    color: rgb(214, 214, 214);
+  }
+  /* Header & Footer */
+}
+
+/* Header & Footer */
