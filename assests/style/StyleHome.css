@@ -84,5 +84,10 @@
   }
   /* Header & Footer */
 }
+@media only screen and (max-width: 800px) {
+  .Appheader {
+    padding: 0% 0%;
+  }
+}
 
 /* Header & Footer */
